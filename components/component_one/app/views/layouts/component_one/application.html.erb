@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Component one</title>
+  <%= stylesheet_link_tag    "component_one/application", media: "all" %>
+  <%#= debugger %>
+  <%#= debugger %>
+  <%= javascript_include_tag "component_one/application" %>
+
+  <%= javascript_pack_tag 'application' %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
