@@ -2,7 +2,7 @@ module ComponentOne
   class Engine < ::Rails::Engine
     isolate_namespace ComponentOne
 
-    initializer "webpacker.proxy" do |app|
+      initializer "webpacker.proxy" do |app|
         insert_middleware = begin
                             ComponentOne.webpacker.config.dev_server.present?
                           rescue
@@ -17,6 +17,13 @@ module ComponentOne
           webpacker: ComponentOne.webpacker
         )
       end
+      
+      initializer "webpacker.static" do |app|
+        app.config.middleware.use(
+          Rack::Static,
+          urls: ["/component_one/c-packs"], root: ROOT_PATH.join("public")
+        )
+      end      
 
   end
 end

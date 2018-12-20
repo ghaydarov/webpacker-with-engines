@@ -2,7 +2,7 @@
   "name": "umbrella",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "https://github.com/rails/webpacker",
+    "@rails/webpacker": "https://github.com/ghaydarov/webpacker",
     "font-awesome": "^4.7.0"
   },
   "devDependencies": {

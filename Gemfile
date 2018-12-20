@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
+gem 'webpacker', git: 'https://github.com/ghaydarov/webpacker'
 
 gem 'component_one', path: 'components/component_one'
 gem 'component_two', path: 'components/component_two'
@@ -42,6 +42,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
+  gem 'rspec-rails', '~> 3.8'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end

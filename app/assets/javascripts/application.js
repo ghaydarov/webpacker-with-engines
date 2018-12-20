@@ -13,3 +13,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+
+console.log('Hello World from Webpacker in Umbrella APP!')
+console.log('sds')

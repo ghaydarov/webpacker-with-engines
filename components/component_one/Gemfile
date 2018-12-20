@@ -13,4 +13,5 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
+gem 'webpacker', git: 'https://github.com/ghaydarov/webpacker'
+gem 'rspec-rails', '~> 3.8'

@@ -1,0 +1,14 @@
+{
+  "c1-application.js": "/component_one/c-packs/c1-application-7bdb54ace0dc97f359d1.js",
+  "c1-application.js.map": "/component_one/c-packs/c1-application-7bdb54ace0dc97f359d1.js.map",
+  "entrypoints": {
+    "c1-application": {
+      "js": [
+        "/component_one/c-packs/c1-application-7bdb54ace0dc97f359d1.js"
+      ],
+      "js.map": [
+        "/component_one/c-packs/c1-application-7bdb54ace0dc97f359d1.js.map"
+      ]
+    }
+  }
+}

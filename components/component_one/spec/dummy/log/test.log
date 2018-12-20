@@ -1,0 +1,399 @@
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "component_one_articles"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "component_one_articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "text" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20181219150617)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2018-12-20 18:45:10.688537"], ["updated_at", "2018-12-20 18:45:10.688537"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:45:10 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (10.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:46:07 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.5ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:46:10 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:47:19 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:49:20 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (14.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:53:07 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:56:25 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.0ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:56:30 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:57:54 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (10.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 13:58:58 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (8.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:00:31 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-12-20 14:00:46 -0500
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:00:55 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (8.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:04:27 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (12.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:06:11 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:06:44 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (11.7ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:09:01 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (10.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:12:31 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (8.8ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:15:56 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (8.9ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:22:34 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:24:30 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (8.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:29:46 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (9.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:30:16 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:31:18 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:32:25 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:32:55 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:33:54 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:34:21 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:38:11 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:40:16 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:43:40 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:45:56 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (5.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:48:30 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (6.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one" for 127.0.0.1 at 2018-12-20 14:49:08 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/phrg/Projects/umbrella/components/component_one/lib/../public/packs-test
+[Webpacker] Hash: 8c7d65feedf67f3d941a
+Version: webpack 4.28.0
+Time: 278ms
+Built at: 12/20/2018 2:49:10 PM
+                                     Asset       Size          Chunks             Chunk Names
+    c1-application-9d5b21389b01de6fef61.js      6 KiB  c1-application  [emitted]  c1-application
+c1-application-9d5b21389b01de6fef61.js.map   5.07 KiB  c1-application  [emitted]  c1-application
+                             manifest.json  393 bytes                  [emitted]  
+Entrypoint c1-application = c1-application-9d5b21389b01de6fef61.js c1-application-9d5b21389b01de6fef61.js.map
+[./app/assets/javascripts/component_one/application.js] 703 bytes {c1-application} [built]
+[./app/frontend/component_one/c-packs/c1-application.js] 541 bytes {c1-application} [built]
+
+Completed 200 OK in 1659ms (Views: 1655.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 14:50:20 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.9ms)
+Completed 200 OK in 192ms (Views: 188.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 14:50:39 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.7ms)
+Completed 200 OK in 183ms (Views: 179.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 14:54:29 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (2.1ms)
+Completed 200 OK in 206ms (Views: 202.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 14:54:43 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.8ms)
+Completed 200 OK in 171ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 14:56:18 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.7ms)
+Completed 200 OK in 172ms (Views: 168.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 14:58:32 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.7ms)
+Completed 200 OK in 177ms (Views: 174.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 14:58:56 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.7ms)
+Completed 200 OK in 195ms (Views: 191.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-20 15:00:21 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/phrg/Projects/umbrella/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (1.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/phrg/Projects/umbrella/components/component_one/lib/../public/packs-test
+[Webpacker] Hash: 8c7d65feedf67f3d941a
+Version: webpack 4.28.0
+Time: 285ms
+Built at: 12/20/2018 3:00:22 PM
+                                     Asset       Size          Chunks             Chunk Names
+    c1-application-9d5b21389b01de6fef61.js      6 KiB  c1-application  [emitted]  c1-application
+c1-application-9d5b21389b01de6fef61.js.map   5.07 KiB  c1-application  [emitted]  c1-application
+                             manifest.json  393 bytes                  [emitted]  
+Entrypoint c1-application = c1-application-9d5b21389b01de6fef61.js c1-application-9d5b21389b01de6fef61.js.map
+[./app/assets/javascripts/component_one/application.js] 703 bytes {c1-application} [built]
+[./app/frontend/component_one/c-packs/c1-application.js] 541 bytes {c1-application} [built]
+
+Completed 200 OK in 1653ms (Views: 1648.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m

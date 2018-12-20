@@ -639,9 +639,9 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@rails/webpacker@https://github.com/rails/webpacker":
+"@rails/webpacker@https://github.com/ghaydarov/webpacker":
   version "4.0.0-rc.2"
-  resolved "https://github.com/rails/webpacker#3d4b7b31b39b20a67aa574b62831786955b4f442"
+  resolved "https://github.com/ghaydarov/webpacker#4ca2676ca22fcf17506c42b799feba0339d6fd0d"
   dependencies:
     "@babel/core" "^7.2.0"
     "@babel/plugin-proposal-class-properties" "^7.2.1"

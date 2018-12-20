@@ -8,4 +8,5 @@
 // layout file, like app/views/layouts/application.html.erb
 
 
+import 'javascripts/application.js'
 import 'javascripts/main.js'

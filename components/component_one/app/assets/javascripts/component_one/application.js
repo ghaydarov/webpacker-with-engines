@@ -11,3 +11,5 @@
 // about supported directives.
 //
 //= require_tree .
+
+console.log("componento")

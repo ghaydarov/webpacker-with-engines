@@ -1,12 +1,12 @@
 # Note: You must restart bin/webpack-dev-server for changes to take effect
 
 default: &default
-  source_path: app/javascript
-  source_entry_path: c-packs
-  public_output_path: c-packs
+  source_path: app/frontend
+  source_entry_path: component_one/c-packs
+  public_output_path: component_one/c-packs
   cache_path: tmp/cache/webpacker
   check_yarn_integrity: false
-  webpack_compile_output: false
+  webpack_compile_output: true
 
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
@@ -49,21 +49,21 @@ default: &default
 
 development:
   <<: *default
-  compile: false
+  compile: true
 
   # Verifies that versions and hashed value of the package contents in the project's package.json
   check_yarn_integrity: true
 
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
-    env_prefix: "COMPONE"
+    env_prefix: "COMPONENT"
     https: false
     host: localhost
-    port: 3039
-    public: localhost:3039
+    port: 3035
+    public: localhost:3035
     hmr: false
     # Inline should be set to true if using HMR
-    inline: true
+    inline: false
     overlay: true
     compress: true
     disable_host_check: true
