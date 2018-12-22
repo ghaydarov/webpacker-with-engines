@@ -18,11 +18,15 @@
 !/tmp/.keep
 
 /node_modules
+/components/component_one/node_modules
+
 /yarn-error.log
 
 .byebug_history
 /public/packs
 /public/packs-test
+/components/component_one/public/packs
+/components/component_one/public/packs-test
 /node_modules
 /yarn-error.log
 yarn-debug.log*
