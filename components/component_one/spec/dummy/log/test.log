@@ -397,3 +397,63 @@ Entrypoint c1-application = c1-application-9d5b21389b01de6fef61.js c1-applicatio
 
 Completed 200 OK in 1653ms (Views: 1648.2ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-21 15:55:18 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (3.9ms)
+Completed 200 OK in 259ms (Views: 254.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-21 15:58:19 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (4.2ms)
+Completed 200 OK in 280ms (Views: 275.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-21 16:17:57 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (3.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/kotell/Projects/webpacker-with-engines/components/component_one/lib/../public/packs-test
+[Webpacker] Hash: 8c7d65feedf67f3d941a
+Version: webpack 4.28.0
+Time: 782ms
+Built at: 12/21/2018 4:18:01 PM
+                                     Asset       Size          Chunks             Chunk Names
+    c1-application-9d5b21389b01de6fef61.js      6 KiB  c1-application  [emitted]  c1-application
+c1-application-9d5b21389b01de6fef61.js.map   5.07 KiB  c1-application  [emitted]  c1-application
+                             manifest.json  393 bytes                  [emitted]  
+Entrypoint c1-application = c1-application-9d5b21389b01de6fef61.js c1-application-9d5b21389b01de6fef61.js.map
+[./app/assets/javascripts/component_one/application.js] 703 bytes {c1-application} [built]
+[./app/frontend/component_one/c-packs/c1-application.js] 541 bytes {c1-application} [built]
+
+Completed 200 OK in 4635ms (Views: 4631.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/component_one/" for 127.0.0.1 at 2018-12-21 16:30:31 -0500
+Processing by ComponentOne::WelcomeController#component as HTML
+  Rendering /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application
+  Rendered /Users/kotell/Projects/webpacker-with-engines/components/component_one/app/views/component_one/welcome/component.html.erb within layouts/component_one/application (3.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/kotell/Projects/webpacker-with-engines/components/component_one/lib/../../../public/packs-test
+[Webpacker] Hash: 8c7d65feedf67f3d941a
+Version: webpack 4.28.0
+Time: 740ms
+Built at: 12/21/2018 4:30:35 PM
+                                     Asset       Size          Chunks             Chunk Names
+    c1-application-9d5b21389b01de6fef61.js      6 KiB  c1-application  [emitted]  c1-application
+c1-application-9d5b21389b01de6fef61.js.map   5.07 KiB  c1-application  [emitted]  c1-application
+                             manifest.json  393 bytes                  [emitted]  
+Entrypoint c1-application = c1-application-9d5b21389b01de6fef61.js c1-application-9d5b21389b01de6fef61.js.map
+[./app/assets/javascripts/component_one/application.js] 703 bytes {c1-application} [built]
+[./app/frontend/component_one/c-packs/c1-application.js] 541 bytes {c1-application} [built]
+
+Completed 200 OK in 4403ms (Views: 4399.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m

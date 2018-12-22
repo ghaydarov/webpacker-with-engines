@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/ghaydarov/webpacker
-  revision: 42948d426ba24c7a337d6a2fbca05cbe11a326c6
+  remote: https://github.com/palkan/webpacker
+  revision: 17f9ffdc92dd7e6d3ef97e2dcee0ef4a72651600
   specs:
     webpacker (4.0.0.rc.2)
       activesupport (>= 4.2)

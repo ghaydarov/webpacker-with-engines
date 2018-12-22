@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'webpacker', git: 'https://github.com/ghaydarov/webpacker'
+gem 'webpacker', git: 'https://github.com/palkan/webpacker'
 
 gem 'component_one', path: 'components/component_one'
 gem 'component_two', path: 'components/component_two'

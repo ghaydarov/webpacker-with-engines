@@ -3,7 +3,8 @@
 default: &default
   source_path: app/frontend
   source_entry_path: component_one/c-packs
-  public_output_path: component_one/c-packs
+  public_root_path: ../../public  
+  public_output_path: c1-packs
   cache_path: tmp/cache/webpacker
   check_yarn_integrity: false
   webpack_compile_output: true

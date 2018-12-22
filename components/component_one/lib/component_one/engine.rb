@@ -18,12 +18,12 @@ module ComponentOne
         )
       end
       
-      initializer "webpacker.static" do |app|
-        app.config.middleware.use(
-          Rack::Static,
-          urls: ["/component_one/c-packs"], root: ROOT_PATH.join("public")
-        )
-      end      
+      # initializer "webpacker.static" do |app|
+      #   app.config.middleware.use(
+      #     Rack::Static,
+      #     urls: ["/component_one/c-packs"], root: ROOT_PATH.join("public")
+      #   )
+      # end      
 
   end
 end
